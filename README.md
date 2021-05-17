@@ -19,24 +19,24 @@ The main method is inside Driver.java (Compile and run this file). The program r
 The Driver class mainly uses methods from the FrequencyCount class in order to successfully run this program. It utilizes java's Random, ArrayList, List, and HashMap API in order to create these methods.
 
 **FrequencyCount (List<String> text, int degree)**
-        -Parametized constructor which gets a list of words from the text file. Depending on the 
+        - Parametized constructor which gets a list of words from the text file. Depending on the 
         degree (amount of words in each token), the constructor will create new tokens provided 
         that they are unique. If a token exists, it will increment the value at the given key.
 
 **sortedMap()**
-	-this method, essentially, stores the HashMap into a list of string from lowest to highest count of appearances. It acccomplishes by using temporary HashMap where each count in the token is linked to ArrayList of all the tokens that have that count.
+	- this method, essentially, stores the HashMap into a list of string from lowest to highest count of appearances. It acccomplishes by using temporary HashMap where each count in the token is linked to ArrayList of all the tokens that have that count.
 
 **head()**
-	-Returns a list of the top 20 most utilized keys in the text File
+	- Returns a list of the top 20 most utilized keys in the text File
 
 **tail()**
-	-Returns a list of the top 20 least utilized keys in the text File
+	- Returns a list of the top 20 least utilized keys in the text File
 
 **count(String token)**
-	-Return the number of times that this token has appeared in the text File
+	- Return the number of times that this token has appeared in the text File
 
 **percent(String token)**
-	-Returns the percentage that the token take from the text File. Does this by counting the amount of words from the token, multiplying that number by the count of the token and dividing it by the amount of words in the text File.
+	- Returns the percentage that the token take from the text File. Does this by counting the amount of words from the token, multiplying that number by the count of the token and dividing it by the amount of words in the text File.
 
 **randomToken()**
-	-Returns a randomToken from the HashMap. Primarily used to create random generated poems using the tokens.
+	- Returns a randomToken from the HashMap. Primarily used to create random generated poems using the tokens.
